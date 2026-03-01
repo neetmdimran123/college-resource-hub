@@ -1,51 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Md Imran Ansari - College Resource Hub</title>
+<title>College Resource Hub</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div id="rolePage" class="center">
-<h1>Md Imran Ansari -College Resource Hub</h1>
-  <button onclick="openStudent()">Student</button>
-  <button onclick="openAdminLogin()">Admin</button>
-</div>
+<div class="topbar">
+    <header>
+    <button id="backBtn">←</button>
 
-<div id="adminLogin" class="center hidden">
-  <h2>Admin Login</h2>
-  <input type="password" id="adminPass" placeholder="Enter Password">
-  <button onclick="checkAdmin()">Login</button>
-  <button onclick="goBack()">Back</button>
-</div>
+    <div class="header-center">
+        <div class="college-name">Excel Engineering College</div>
+        <div id="title">College Resource Hub</div>
+    </div>
 
-<div id="mainPage" class="hidden">
-  <div class="topBar">
-    <button onclick="goBack()">⬅ Back</button>
-    <h2 id="pageTitle">Departments</h2>
-  </div>
+    <div class="header-right">
+        <button id="adminBtn">Admin</button>
+        <button id="themeToggle">🌙</button>
+    </div>
+</header>
 
-  <div id="content"></div>
+    <div style="display:flex;gap:8px;">
+    
+    </div>
+</header>
 
-  <button id="addBtn" class="addBtn hidden" onclick="addItem()">＋</button>
-</div>
+<div id="app"></div>
 
-<script src="script.js"></script>
-<!-- Popup Form -->
-<div id="popupForm" class="popup hidden">
-  <div class="popup-content">
-    <h3 id="formTitle"></h3>
-
-    <input type="text" id="subjectInput" placeholder="Subject Name">
-    <input type="text" id="unitInput" placeholder="Unit / Topic">
-    <input type="date" id="dateInput" class="hidden">
-    <input type="text" id="linkInput" placeholder="PDF Download Link">
-
-    <button onclick="submitForm()">Save</button>
-    <button onclick="closeForm()">Cancel</button>
-  </div>
-</div>
+<script src="app.js"></script>
+<footer style="
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+    background:#f0fdf4;
+    color: green;
+    margin-top:30px;">
+    
+    Version v2.0 <br>
+    Developed by Md Imran Ansari
+</footer>
 </body>
 </html>
